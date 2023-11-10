@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    image: auto-reply-categorizer:latest
+    command: uvicorn main:app --host 0.0.0.0 --port 80 --reload
+    volumes:
+      - .:/app
+      - /app/__pycache__
+    ports:
+      - "80:80"
+    environment:
+      - PYTHONUNBUFFERED=1

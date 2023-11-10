@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+transformers
+torch
+pandas
+python-dotenv
+nlp
+datasets
+fugashi
+ipadic
+sentencepiece
+accelerate
+boto3
